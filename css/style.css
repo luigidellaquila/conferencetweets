@@ -1,0 +1,25 @@
+html, body{
+    padding: 0px;
+    margin: 0px;
+}
+.maingrid >tbody ,
+.maingrid >tbody ,
+.maingrid >tbody >tr,
+.maingrid >tbody >tr>td{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font: 10pt arial;
+}
+#mynetwork {
+    width: 900px;
+    height: 800px;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid lightgray;
+    background-color:#333333;
+    background-image: url("../img/iceberg-big.jpg");
+    background-size: cover;
+}
+

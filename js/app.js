@@ -87,6 +87,9 @@ var loadGraph = function () {
 
 
 function showProfileDetails(nodeId) {
+    if(!nodeId){
+        return;
+    }
     $.ajax({
         type: "POST",
         url: orientDbUrl + "sql/-/-1",
@@ -110,4 +113,14 @@ function showProfileDetails(nodeId) {
             alert(jqXHR.responseJSON.errors[0].content);
         }
     });
+}
+
+function startPhysics(){
+    network.setOptions({physics:{enabled:true}});
+    network.startSimulation();
+}
+
+function stopPhysics(){
+    network.stopSimulation();
+    network.setOptions({physics:{enabled:false}});
 }
